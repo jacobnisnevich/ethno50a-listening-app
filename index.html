@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Ethno 50A Midterm Listening</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<script>
+		$(document).ready(function() {
+			var songs = Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
+			var randomSong = songs[Math.floor(Math.random()*songs.length)];
+			var songId = "#song-" + randomSong;
+			songs.splice(songs.indexOf(randomSong), 1);
+			$("#show").click(function() {
+				$(songId).show();
+				$("#widgetContainer").contents().find("div.clickable play-pause-btn sprite").click();
+			});
+		});
+		</script>
+		<div class="button" id="show">Show Song</div>
+		<div class="button" id="next">Next Song</div>
+		<div id="song-container">
+			<div class="song" id="song-0">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:3G2ioNaqXW8RXtlhSD1zHp" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+			<div class="song" id="song-1">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:5H4bQ14RjOVM4eKtaIpn3B" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+			<div class="song" id="song-2">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:5Bk13n28rlG7GYCKDshsQM" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+			<div class="song" id="song-3">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:13ErDjw9DvDDdmPLB1veo7" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+			<div class="song" id="song-4">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:1ellvuD5W8qe7qXUCr5wsV" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+			<div class="song" id="song-5">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:7oTDuYHa8B8M6MpfR68oGy" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+			<div class="song" id="song-6">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:7dOz8RrPWP9UgJ8X8p1vU7" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+			<div class="song" id="song-7">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:43QRJNdGe4GaO0ucHHQnmS" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+			<div class="song" id="song-8">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:6v27P8xpwlYSaaV56levKN" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+			<div class="song" id="song-9">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:2Mrf5zvkQBDecx5eFgS7x0" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+			<div class="song" id="song-10">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:2dlPHT0QMqygQiD7YPijX9" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+			<div class="song" id="song-11">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:3QEzHrVUsYs5ijbYcFi3oH" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+			<div class="song" id="song-12">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:4nKUN64tdoKunNTjHBqf4I" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+			<div class="song" id="song-13">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:4uu1F4n3svGBToDxcnjC0V" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+			<div class="song" id="song-14">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:1ussz5Gf9UCxllleW0AXvG" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+			<div class="song" id="song-15">
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:4AE032Y0x1WPOi5CsmggnU" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+		</div>
+	</body>
+</html>
